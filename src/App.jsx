@@ -44,7 +44,7 @@ const LandingPage = () => {
         </div>
       </main>
 
-      {/* Features Grid - Now 4 columns on desktop */}
+      {/* Features Grid */}
       <section className="px-4 py-16 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
@@ -65,11 +65,11 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials with black divider */}
       <section className="px-4 py-16 max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="flex flex-col md:flex-row gap-12 md:divide-x-2 md:divide-black">
           {[1, 2].map((_, index) => (
-            <div key={index} className="flex flex-col space-y-4">
+            <div key={index} className="flex-1 flex flex-col space-y-4 md:first:pr-12 md:last:pl-12">
               <div className="flex items-center space-x-4">
                 <div className="font-medium">Firstname Lastname</div>
                 <a href="#" className="text-gray-600 hover:text-black">
