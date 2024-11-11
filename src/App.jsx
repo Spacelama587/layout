@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkedinIcon } from 'lucide-react';
+import { LinkedinIcon, Users } from 'lucide-react';
 
 const LandingPage = () => {
   return (
@@ -38,14 +38,15 @@ const LandingPage = () => {
           </button>
         </div>
 
-        <div className="text-gray-500 text-sm">
+        <div className="text-gray-500 text-sm flex items-center justify-center gap-2">
+          <Users size={16} />
           People currently signed up: <span className="font-medium">72</span>
         </div>
       </main>
 
-      {/* Features Grid */}
+      {/* Features Grid - Now 4 columns on desktop */}
       <section className="px-4 py-16 max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { icon: "⚡", title: "Feature One" },
             { icon: "👥", title: "Feature Two" },
